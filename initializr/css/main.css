@@ -1,0 +1,305 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+header{
+    
+    width: 100%;
+    height: 640px;
+
+}
+
+.contenedor{
+   position: relative;
+   width: 100%;
+}
+.ribbon{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    z-index: 5;
+}
+
+.slider{
+    position: absolute; 
+    z-index: 1;
+    margin-bottom: 20px;
+
+
+}
+
+/*menu*/
+.menu{
+    
+    width: 100%;
+    
+}
+.navbar-default {
+background-color: #C62828;
+/* border-color: #C62828; */
+}
+.navbar-default .navbar-nav > li > a {
+color: white;
+}
+
+.navbar-nav > li > a {
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 70px;
+}
+/*section cuerpo*/
+.cuerpo{
+  width: 1200px;
+  height:350px;
+  background-color: #EEEEEE;
+  margin: 0 auto;  
+  padding: 10px;
+  padding-left: 30px; 
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(50, 50, 50, 0.6);
+  box-shadow: 0px 0px 18px 0px rgba(50, 50, 50, 0.6);
+
+}
+/*section botones*/
+.botones{
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-left: 150px;
+}
+.botones div >img{
+    margin: auto 0;
+}
+/*
+section.botones div .botones_efec{
+   -webkit-filter:saturate(0)
+}
+
+section.botones div .botones_efec:hover{
+   -webkit-filter:saturate(1);
+    -webkit-transition:all 3s;
+}*/
+
+div > .botones_efec{
+    color: rgba(145,145,145,0.8);
+    border: solid 2px red;
+}
+
+/*footer*/
+.pie{
+    width: 100%;
+    height: 50px;
+    background-color: #424242;
+}
+.pie > p{
+    color: white;
+    font-size: 0.8em;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

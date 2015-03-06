@@ -93,6 +93,28 @@ header{
     width: 100%;
     
 }
+.navbar-nav > li {
+float: left;
+
+margin: 0 auto;
+margin-left: 6px;
+
+}
+ li > a {
+
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 40px;
+}
+.navbar-nav > li:hover {
+float: left;
+background-color: #660033;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: white;
+background-color: transparent;
+}
+
 .navbar-default {
 background-color: #C62828;
 /* border-color: #C62828; */
@@ -128,7 +150,7 @@ padding-left: 70px;
 .botones div >img{
     margin: auto 0;
 }
-/*
+
 section.botones div .botones_efec{
    -webkit-filter:saturate(0)
 }
@@ -136,11 +158,11 @@ section.botones div .botones_efec{
 section.botones div .botones_efec:hover{
    -webkit-filter:saturate(1);
     -webkit-transition:all 3s;
-}*/
+}
 
 div > .botones_efec{
     color: rgba(145,145,145,0.8);
-    border: solid 2px red;
+   
 }
 
 /*footer*/
@@ -154,7 +176,15 @@ div > .botones_efec{
     font-size: 0.8em;
     padding-top: 15px;
 }
+.lado{
+    margin-left: 350px;
+}
+.myBtn {
+width: 177px;
+height: 44px;
+background-image: url("..img/sleyendo_03.png");
 
+}
 
 
 

@@ -72,11 +72,19 @@ header{
    position: relative;
    width: 100%;
 }
+.ribbon_contenedor{
+
+}
 .ribbon{
+    
     position: absolute;
+    margin-bottom: 10px;
     top:0px;
+    bottom: 10em;
+    display: block;
     width: 100%;
     z-index: 5;
+
 }
 
 .slider{
@@ -85,6 +93,14 @@ header{
     margin-bottom: 20px;
 
 
+}
+.image{
+    display: block;
+   
+    margin-top: 2em;
+    width: 100%;
+    height: 450px;
+   
 }
 
 /*menu*/
